@@ -1,0 +1,41 @@
+permalink: /:categories:month/:title
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+pygments: true
+url: ntgcyslyrt.github.com
+exclude:
+        - Rakefile
+        - Makefile
+        - presentation.md
+        - presentation.html
+        - presentation.png
+        - media
+
+account: ntgcyslyrt
+archive: Son Girdiler
+assets: /assets
+author: Nurdan Tuğçe Yeşilyurt
+disqus: ntgcyslyrt
+email: nty@bil.omu.edu.tr
+facebook: https://facebook.com/ntgcyslyrt
+feed: ~
+flickr: ~
+google: ~
+googleanalyticsid: ~
+googleplus: ~
+gpg: ~
+homeurl: http://ntgcyslyrt.github.com
+logo: /assets/19/19-normal-128x128.png
+organization: 19
+picasa: ~
+related: Diğer Girdiler
+repository: ntgcyslyrt.github.com
+ribbon: GitHub'dayım
+title: Nurdan Tuğçe Yeşilyurt
+twitter: ~
+
+navigator:
+        0: Teknik Olmayan Yazılar
+        1: Teknik Yazılar
+        9: Kısa Notlar

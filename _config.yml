@@ -3,7 +3,7 @@ markdown: rdiscount
 rdiscount:
   extensions: [smart]
 pygments: true
-url: ntgcyslyrt.github.com
+url: http://ntgcyslyrt.github.com
 exclude:
         - Rakefile
         - Makefile

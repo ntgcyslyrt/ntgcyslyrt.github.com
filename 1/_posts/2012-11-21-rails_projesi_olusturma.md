@@ -10,14 +10,13 @@ kullanıcı olarak çalıştırmanız gerekir.
 
     # gem install rails
 
-
 veya
 
     $ sudo gem install rails
 
-komutları ile sisteminize rails i yükleyebilirsiniz.
+komutları ile sisteminize rails' i yükleyebilirsiniz.
 
-Eğerki sisteminizde railsi yüklediyseniz
+Eğerki sisteminizde rails varsa,
 
     $ rails -v 
     Rails 3.2.8

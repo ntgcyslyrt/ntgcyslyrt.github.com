@@ -31,14 +31,16 @@ komutları ile sürümünüzü öğrenebilirsiniz.
 Eğerki Windows işletim sistemi kullanıyorsanız [Ruby On Rails](http://railsinstaller.org/)
 adresinden yardım alarak yapabilirsiniz.
 
-#Blog Uygumalası Üretmek
+#Blog Uygulaması Üretmek
 
 Konsoldan üzerinde çalışmak istediğimiz bir klasör veya ev dizinimizde 
 
     $ rails new blog
 
 komutunu veriyoruz.Bu komuttan sonra rails gerekli klasör ve dosyaların
-bulunduğu bir blog klasörü oluşturuyor. Daha sonra
+bulunduğu bir blog klasörü oluşturuyor. 
+
+Daha sonra;
 
     $ cd blog
 
@@ -82,5 +84,61 @@ yarar.
 
 **vendor/**     --> 3. parti kodlar burada bulunmaktadır. Tipik bir rails
 uygulaması, Ruby Gemleri, Rails kodlarını içermektedir.
+
+#Veritabanı Konfigürasyonu
+
+Tüm Rails uygulamaları bir veritabanı kullanmaktadır. Kullanılacak bu veritabanı
+config/database.yml dosyasında tarif edilmektedir.
+
+**1.** SQLite3 Veritabanı Konfigürasyonu
+
+Yeni bir Rails uygulaması oluşturduğunuzda default olarak SQLite3 veritabanı ile karşılaşırsınız.
+
+SQLite3 ile çalışacaksak config/database.yml içine;
+
+    development:
+     adapter: sqlite3
+     database: db/development.sqlite3
+     pool: 5
+     timeout: 5000
+
+bilgilerini ekleriz.
+
+**2.** MySQL Veritabanı Konfigürasyonu
+
+MySQL veritabanı kullanmak isterseniz config/database.yml içine;
+
+    development:
+     adapter: mysql2
+     encoding: utf8
+     database: blog_development
+     pool: 5
+     username: root
+     password:
+     socket: /tmp/mysql.sock
+
+bilgilerini eklemeniz gereklidir.
+
+**3.** PostgreSQL Veritabanı Konfigürasyonu
+
+PostgreSQL veritabanı kullanmak isterseniz config/database.yml içine;
+
+    development:
+     adapter: postgresql
+     encoding: unicode
+     database: blog_development
+     pool: 5
+     username: blog
+     password:
+
+bilgilerini eklemeniz gereklidir.
+
+- Veritabanı konfigürasyonlarını tamamladıktan sonra Rails' in boş bir veritabanı
+üretmesini sağlamamız gerekli. Bunun için konsoldan; 
+
+$ rake db:create
+
+komutunu veriyoruz. Bu komut bize db/ klasörü altında geliştirme ve test
+veritabanları oluşturuyor.
 
 

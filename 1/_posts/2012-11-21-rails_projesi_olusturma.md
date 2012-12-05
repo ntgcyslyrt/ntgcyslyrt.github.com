@@ -141,4 +141,6 @@ $ rake db:create
 komutunu veriyoruz. Bu komut bize db/ klasörü altında geliştirme ve test
 veritabanları oluşturuyor.
 
+**Yararlanılan Kaynak ve Detaylı Bilgi:**
 
+[Ruby on Rails](http://guides.rubyonrails.org/)

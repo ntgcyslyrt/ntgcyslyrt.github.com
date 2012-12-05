@@ -90,7 +90,7 @@ uygulaması, Ruby Gemleri, Rails kodlarını içermektedir.
 Tüm Rails uygulamaları bir veritabanı kullanmaktadır. Kullanılacak bu veritabanı
 config/database.yml dosyasında tarif edilmektedir.
 
-**1.** SQLite3 Veritabanı Konfigürasyonu
+**1. SQLite3 Veritabanı Konfigürasyonu**
 
 Yeni bir Rails uygulaması oluşturduğunuzda default olarak SQLite3 veritabanı ile karşılaşırsınız.
 
@@ -104,7 +104,7 @@ SQLite3 ile çalışacaksak config/database.yml içine;
 
 bilgilerini ekleriz.
 
-**2.** MySQL Veritabanı Konfigürasyonu
+**2. MySQL Veritabanı Konfigürasyonu**
 
 MySQL veritabanı kullanmak isterseniz config/database.yml içine;
 
@@ -119,7 +119,7 @@ MySQL veritabanı kullanmak isterseniz config/database.yml içine;
 
 bilgilerini eklemeniz gereklidir.
 
-**3.** PostgreSQL Veritabanı Konfigürasyonu
+**3. PostgreSQL Veritabanı Konfigürasyonu**
 
 PostgreSQL veritabanı kullanmak isterseniz config/database.yml içine;
 
